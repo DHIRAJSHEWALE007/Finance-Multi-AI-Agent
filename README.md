@@ -41,10 +41,12 @@ A powerful AI-driven project that combines financial data analysis and web searc
 **Start the Streamlit server:**
    ```bash
    streamlit run app.py
+```
 
 **Then open your browser and go to:**
    ```bash
    http://localhost:8501
+```
 
 ---
 
