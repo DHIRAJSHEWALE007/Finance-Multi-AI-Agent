@@ -6,6 +6,13 @@ load_dotenv(override=True)
 
 from src.graphs.multi_ai_agent import multi_ai_agent
 
+st.title("Multi-Agent System")
 
+query = st.text_input("Ask a question:")
 
-multi_ai_agent.print_response("nvidia stock price", stream=True)
+if query:
+    with st.spinner("Processing..."):
+
+        response = multi_ai_agent.print_response(query, stream=True)
+        
+        st.markdown(response)
